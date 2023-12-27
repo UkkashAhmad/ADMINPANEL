@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+.home{
+
+
+    display: grid;
+    gap: 20px;
+    // i want to repeat 4 times with 1 fr this is it
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    .box{
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid $soft-bg;
+    }
+
+    .box1{
+        //this mean only frist box item i want
+        grid-column: span 1 ;
+        //this mean i want it downside more than 1 box size
+        grid-row: span 3;
+    }
+    .box4{
+        //this mean only frist box item i want
+        grid-column: span 1 ;
+        //this mean i want it downside more than 1 box size
+        grid-row: span 3;
+    }
+    .box7{
+        //this mean only frist box item i want
+        grid-column: span 2 ;
+        //this mean i want it downside more than 1 box size
+        grid-row: span 2;
+    }
+}
